@@ -1,0 +1,16 @@
+<div>
+	<hr>
+	<p><em> {{ tome.title }} </em> by {{ tome.author }} Price: ${{ tome.price }}
+		Likes: {{ tome.likes }}
+	</p>
+
+	<p>
+		<button (click)="tome.liked()" class="btn btn-primary">Like</button>
+		&nbsp;&nbsp;
+		<button (click)="tellMom('I want to buy ' + this.tome.title)">I want this book</button>
+		&nbsp;
+		<button (click)="tellMom('Love Ya. ♥️')" >Love Yea ♥️</button>
+	</p>
+
+	<hr>
+</div>
